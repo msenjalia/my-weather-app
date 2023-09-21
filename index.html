@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/671d44d987.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="src/styles.css" />
+  </head>
+  <body>
+    <div
+      class="container"
+      id="root">
+      <div class="weather">
+        <form id="search-form">
+          <div class="row">
+            <div class="col">
+              <input
+                type="Search"
+                placeholder="Enter a city"
+                class="form-control"
+                autocomplete="off"
+                id="search-field" />
+            </div>
+            <div class="col">
+              <input
+                type="submit"
+                value="🔍"
+                class="btn primary-btn"
+                id="search-button" />
+            </div>
+          </div>
+        </form>
+        <div class="row">
+          <div class="col-3">
+            <ul>
+              <li
+                class="displayCurrent"
+                id="currentCity">
+                Brampton
+              </li>
+              <li
+                class="displayCurrent"
+                id="currentDate"></li>
+              <li
+                class="displayCurrent"
+                id="currentTime"></li>
+            </ul>
+          </div>
+
+          <div class="col displaycurrent">
+            <div>
+              <div class="temp-range">
+                <p id="high">High 28&deg;</p>
+                <p
+                  id="low"
+                  style="color: rgba(240, 255, 255, 0.861)">
+                  Low 15&deg;
+                </p>
+              </div>
+              <h2 class="current-scan">
+                <img
+                  src="images/Group 1sunny.svg"
+                  alt="sunnywithclouds"
+                  width="130px" />
+                <div class="col">
+                  <h1 class="temp"></h1>
+                  <p class="description">Cloudy with sunshine</p>
+                </div>
+              </h2>
+            </div>
+
+            <div class="col">
+              <ul class="further-info">
+                <li>
+                  <span class="wind">wind 20km/h </span>
+                </li>
+                <li>
+                  <span class="humidity">humidity 70% </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="row">
+            <div class="col forecast-body">
+              <h5 class="future-date">Friday</h5>
+              <img
+                src="images/Group 2cloudy.svg"
+                alt="sunnywithclouds"
+                width="48px" />
+              <p class="future-temp">18&deg;C</p>
+            </div>
+
+            <div class="col forecast-body">
+              <h5 class="future-date">Saturday</h5>
+              <img
+                src="images/Group 1sun.svg"
+                alt="sunnywithclouds"
+                width="38px" />
+              <p class="future-temp">26&deg;C</p>
+            </div>
+
+            <div class="col forecast-body">
+              <h5 class="future-date">Sunday</h5>
+              <img
+                src="images/cloudy with rain.svg"
+                alt="sunnywithclouds"
+                width="48px" />
+              <p class="future-temp">19&deg;C</p>
+            </div>
+
+            <div class="col forecast-body">
+              <h5 class="future-date">Monday</h5>
+              <img
+                src="images/Group 12cloudymoon.svg"
+                alt="sunnywithclouds"
+                width="48px" />
+              <p class="future-temp">23&deg;C</p>
+            </div>
+
+            <div class="col forecast-body">
+              <h5 class="future-date">Tuesday</h5>
+              <img
+                src="images/Group 2cloudy.svg"
+                alt="sunnywithclouds"
+                width="48px" />
+              <p class="future-temp">15&deg;C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+#root {
+  box-sizing: content-box;
+  display: block;
+  padding: 28px 38px;
+  max-width: 600px;
+  margin-top: 50px;
+  border-radius: 16px;
+  background: rgba(28, 18, 68, 0.934);
+}
+
+.weather {
+  margin: 0auto;
+  display: block;
+  font-family: "DomaineDisplayNarrow", Georgia, serif;
+  color: rgba(46, 28, 28, 0.978);
+  padding: 40px 40px;
+  background: rgba(246, 246, 246, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.5px);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+}
+header {
+}
+#currentCity {
+  font-size: 38px;
+  font-weight: 500;
+  margin-top: 20px;
+
+  padding: 20px;
+
+  font-weight: 500;
+  color: rgba(46, 28, 28, 0.778);
+}
+#currentDate,
+#currentTime {
+  display: block;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.displaycurrent {
+  box-sizing: content-box;
+  display: block;
+  text-align: center;
+  padding: 10px 10px 0px 10px;
+  border-radius: 16px;
+  font-size: 17px;
+  transition: all 150ms ease-in;
+}
+
+.description {
+  font-size: 18px;
+}
+.temp-range {
+  font-family: "Courier New", Courier, monospace;
+  text-align: right;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.forecast-body:hover,
+.primary-btn:hover {
+  background: rgba(240, 230, 220, 0.497);
+}
+li {
+  font-family: "DomaineDisplayNarrow", Georgia, serif;
+  list-style: none;
+  font-size: 16px;
+  text-align: right;
+}
+
+.forecast-body {
+  display: block;
+  font-family: "DomaineDisplayNarrow", Georgia, serif;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 16px;
+  transition: all 150ms ease-in;
+  margin: 0auto;
+}
+.future-temp {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 14px;
+  color: rgba(46, 28, 28, 0.978);
+  font-weight: bold;
+}
+
+.future-date {
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 14px;
+  color: rgba(46, 28, 28, 0.978);
+}
+
+.form-control {
+  box-sizing: content-box;
+  background: rgba(246, 246, 246, 0.336);
+}
+.primary-btn {
+  position: relative;
+}
