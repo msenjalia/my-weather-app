@@ -1,5 +1,5 @@
 function formatDate() {
-  return `${currentDay}, ${currentMonth} ${date}, ${year}`;
+  return `${currentDay}, ${currentMonth} ${date}`;
 }
 function formatTime() {
   return `${hour}:${minutes}`;
@@ -36,8 +36,6 @@ let Month = [
   "Dec",
 ];
 let currentMonth = Month[now.getMonth()];
-
-let year = now.getFullYear();
 
 let currentDate = document.querySelector("#currentDate");
 currentDate.innerHTML = formatDate();

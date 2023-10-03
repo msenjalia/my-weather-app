@@ -3,9 +3,8 @@
   display: block;
   padding: 28px 38px;
   max-width: 600px;
-  margin-top: 50px;
+  margin-top: 30px;
   border-radius: 16px;
-  background: #5943d6;
 }
 
 .weather {
@@ -24,13 +23,12 @@ footer {
   display: block;
   text-align: center;
 }
-header {
-}
+
 #currentCity {
   font-size: 38px;
   font-weight: 500;
   margin-top: 20px;
-  padding: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
   color: rgba(46, 28, 28, 0.778);
 }
@@ -38,7 +36,7 @@ header {
 #currentTime {
   display: block;
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .displaycurrent {
   box-sizing: content-box;
@@ -46,12 +44,12 @@ header {
   text-align: center;
   padding: 10px 10px 0px 10px;
   border-radius: 16px;
-  font-size: 17px;
+  font-size: 16x;
   transition: all 150ms ease-in;
 }
 
 .description {
-  font-size: 18px;
+  font-size: 16px;
 }
 .temp-range {
   font-family: "Courier New", Courier, monospace;
@@ -96,7 +94,4 @@ li {
 .form-control {
   box-sizing: content-box;
   background: rgba(246, 246, 246, 0.336);
-}
-.primary-btn {
-  position: relative;
 }
