@@ -5,19 +5,20 @@
   max-width: 600px;
   margin-top: 30px;
   border-radius: 16px;
+  background-color: #f8b9d7;
 }
 
 .weather {
   margin: 0auto;
   display: block;
   font-family: "DomaineDisplayNarrow", Georgia, serif;
-  color: rgba(46, 28, 28, 0.978);
+  color: #e12189;
   padding: 40px 40px;
   background: rgba(245, 236, 236, 0.4);
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 30px rgba(112, 68, 101, 0.2);
   backdrop-filter: blur(10.5px);
-  border: 1px solid rgba(255, 255, 255, 0.26);
+  border: 4px solid #fff;
 }
 footer {
   display: block;
@@ -30,7 +31,6 @@ footer {
   margin-top: 20px;
   margin-bottom: 10px;
   font-weight: 500;
-  color: rgba(46, 28, 28, 0.778);
 }
 #currentDate,
 #currentTime {
@@ -52,7 +52,6 @@ footer {
   font-size: 16px;
 }
 .temp-range {
-  font-family: "Courier New", Courier, monospace;
   text-align: right;
   margin: 0 auto;
   padding: 0 auto;
@@ -60,10 +59,9 @@ footer {
 
 .forecast-body:hover,
 .primary-btn:hover {
-  background: rgba(230, 225, 220, 0.497);
+  background: rgba(247, 246, 245, 0.882);
 }
 li {
-  font-family: "DomaineDisplayNarrow", Georgia, serif;
   list-style: none;
   font-size: 16px;
   text-align: right;
@@ -71,7 +69,7 @@ li {
 
 .forecast-body {
   display: block;
-  font-family: "DomaineDisplayNarrow", Georgia, serif;
+
   font-size: 16px;
   text-align: center;
   border-radius: 16px;
@@ -79,19 +77,26 @@ li {
   margin: 0auto;
 }
 .future-temp {
-  font-family: "Courier New", Courier, monospace;
   padding-top: 14px;
-  color: rgba(46, 28, 28, 0.978);
   font-weight: bold;
 }
 
 .future-date {
-  font-family: "Courier New", Courier, monospace;
   padding-top: 14px;
-  color: rgba(46, 28, 28, 0.978);
 }
 
 .form-control {
   box-sizing: content-box;
-  background: rgba(246, 246, 246, 0.336);
+  background: #fff;
+  border-color: #ed5d9c;
+}
+
+.temperature {
+  display: inline-flex;
+}
+.units {
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: default;
 }
