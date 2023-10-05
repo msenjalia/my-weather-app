@@ -50,9 +50,7 @@
             <ul>
               <li
                 class="displayCurrent"
-                id="currentCity">
-                Brampton
-              </li>
+                id="currentCity"></li>
               <li
                 class="displayCurrent"
                 id="currentDate"></li>
@@ -65,20 +63,33 @@
           <div class="col displaycurrent">
             <div>
               <div class="temp-range">
-                <p id="high">High 28&deg;</p>
-                <p
-                  id="low"
-                  style="color: rgba(89, 93, 93, 0.861)">
-                  Low 15&deg;
-                </p>
+                <p>High <span id="high"></span>&deg;</p>
+                <p>Low <span id="low"></span>&deg;</p>
               </div>
               <h2 class="current-scan">
                 <img
-                  src="images/Group 1sunny.svg"
-                  alt="sunnywithclouds"
-                  width="130px" />
+                  id="icon"
+                  src=""
+                  alt="" />
                 <div class="col">
-                  <h1 class="temp"></h1>
+                  <div class="temperature">
+                    <div id="displayTemp"></div>
+                    <span class="units"
+                      ><a
+                        href="#"
+                        id="celsius-link"
+                        class="active"></a>
+                        °C
+                      </a>
+                      |
+                      <a
+                        href="#"
+                        id="fahrenheit-link">
+                        °F
+                      </a>
+                    </span>
+                  </div>
+
                   <p class="description"></p>
                 </div>
               </h2>
@@ -87,10 +98,10 @@
             <div class="col">
               <ul class="further-info">
                 <li>
-                  <span class="wind">wind 20km/h </span>
+                  <span class="wind"> </span>
                 </li>
                 <li>
-                  <span class="humidity">humidity 70% </span>
+                  <span class="humidity"></span>
                 </li>
               </ul>
             </div>
@@ -100,7 +111,7 @@
         <div class="container">
           <div class="row">
             <div class="col forecast-body">
-              <h5 class="future-date">Friday</h5>
+              <h5 class="future-date">Tomorrow</h5>
               <img
                 src="images/Group 2cloudy.svg"
                 alt="sunnywithclouds"
