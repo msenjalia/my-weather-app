@@ -57,34 +57,6 @@ footer {
   padding: 0 auto;
 }
 
-.forecast-body:hover,
-.primary-btn:hover {
-  background: rgba(247, 246, 245, 0.882);
-}
-li {
-  list-style: none;
-  font-size: 16px;
-  text-align: right;
-}
-
-.forecast-body {
-  display: block;
-
-  font-size: 16px;
-  text-align: center;
-  border-radius: 16px;
-  transition: all 150ms ease-in;
-  margin: 0auto;
-}
-.future-temp {
-  padding-top: 14px;
-  font-weight: bold;
-}
-
-.future-date {
-  padding-top: 14px;
-}
-
 .form-control {
   box-sizing: content-box;
   background: #fff;
@@ -98,4 +70,27 @@ li {
   font-size: 13px;
   font-weight: 500;
   cursor: default;
+}
+
+.weather-forecast:hover,
+.primary-btn:hover {
+  background: rgba(247, 246, 245, 0.7);
+}
+li {
+  list-style: none;
+  font-size: 16px;
+  text-align: right;
+}
+
+.weather-forecast {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 16px;
+  transition: all 150ms ease-in-out;
+  margin: 0auto;
+}
+.forecast-temp {
+  padding-top: 13px;
+  font-weight: bold;
 }

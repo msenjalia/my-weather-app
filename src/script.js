@@ -110,7 +110,6 @@ function searchCity(event) {
 }
 
 // unit conversion
-
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#displayTemp");
