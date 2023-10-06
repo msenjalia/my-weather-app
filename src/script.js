@@ -106,6 +106,7 @@ function searchCity(event) {
   let apiUrl = `${apiEndpoint}?q=${searchTxt}&appid=${apiKey}&units=${units}`;
 
   function showTemperature(response) {
+    console.log(response.data);
     let city = document.querySelector("#currentCity");
     city.innerHTML = response.data.name;
 
@@ -165,5 +166,5 @@ search.addEventListener("submit", searchCity);
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
-let celsiusLink = document.querySelector("celsius-link");
+let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
