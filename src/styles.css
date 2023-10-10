@@ -30,6 +30,8 @@ footer {
   border-color: #ed5d9c;
 }
 #currentCity {
+  display: block;
+  text-align: left;
   font-size: 38px;
   font-weight: 500;
   margin-top: 20px;
@@ -38,14 +40,13 @@ footer {
 }
 #currentDate,
 #currentTime {
-  display: block;
+  text-align: left;
   font-size: 14px;
   letter-spacing: 1px;
 }
 .displaycurrent {
   box-sizing: content-box;
   display: block;
-  text-align: center;
   padding: 10px 10px 0px 10px;
   border-radius: 16px;
   font-size: 16px;
@@ -67,11 +68,9 @@ footer {
 }
 .units {
   font-size: 13px;
-  text-decoration-line: none;
-  cursor: default;
 }
 
-.weather-forecast:hover,
+#forecastDay:hover,
 .primary-btn:hover {
   background: rgba(247, 246, 245, 0.7);
 }
@@ -81,7 +80,7 @@ li {
   text-align: right;
 }
 
-.weather-forecast {
+#forecastDay {
   display: block;
   font-size: 15px;
   text-align: center;
