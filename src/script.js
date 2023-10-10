@@ -95,6 +95,28 @@ function showTemperature(response) {
   icon.setAttribute("alt", response.data.weather[0].description);
 }
 
+function showForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Tues", "Wed", "Thurs", "Fri", "Sat"];
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col">
+      <h5 class="forecast-date">${day}</h5>
+      <img
+        src=""
+        alt=""
+        width="48px"
+      />
+      <p class="forecast-temp"></p>
+    </div>`;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchCity(event) {
   event.preventDefault();
 
@@ -102,14 +124,14 @@ function searchCity(event) {
   let searchTxt = input.value.trim();
 
   let units = "metric";
-  let apiEndpoint = "https://api.openweathermap.org/data/2.5/weather";
+  let apiEndPoint = "https://api.openweathermap.org/data/2.5/weather";
   let apiKey = "b9b0b6e5b943ffbecf4de9d704e0c0f3";
-  let apiUrl = `${apiEndpoint}?q=${searchTxt}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `${apiEndPoint}?q=${searchTxt}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(showTemperature);
 }
 
-// unit conversion
+// unit conversion + add/remove active
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let tempElement = document.querySelector("#displayTemp");
@@ -129,6 +151,8 @@ navigator.geolocation.getCurrentPosition(getPosition);
 
 let search = document.querySelector("#search-form");
 search.addEventListener("submit", searchCity);
+
+showForecast();
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
